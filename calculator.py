@@ -33,6 +33,7 @@ def subtraction(a, b):
 
 print("Welcome to the Calculator Program")
 
+# List of operations
 while True:
     print("Select an operation:")
     print("1. Addition")
@@ -41,14 +42,20 @@ while True:
     print("4. Division")
     print("5. Exit")
 
+# User chose an operation
+
     choice = input("Enter your choice (1-5): ")
 
     if choice == '5':
         print("Exiting the calculator program...")
         break
 
+# User input number
+
     (a) = float(input("Enter the first number: "))
     (b) = float(input("Enter the second number: "))
+
+# Result of operation is given
 
     if choice == '1':
         print("Result: " + addition(a, b))
